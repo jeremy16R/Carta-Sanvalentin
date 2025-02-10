@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    background: url(https://img.freepik.com/vector-premium/linda-pareja-amantes-sosteniendo-gran-corazon-amor-feliz-personaje-dibujos-animados-chibi-san-valentin_339032-1834.jpg) no-repeat;
+    
+  }
+  
+  /* Animación de fondo */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Imagen destacada */
+ 
+  /* Título */
+  .title {
+    font-size: 2rem;
+    color: #d63384;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .title:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Párrafos */
+  .description, .countdown, .location, .time {
+    color: #555;
+    margin: 15px 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Botón de confirmación */
+  .confirm-btn {
+    background: #d63384;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3);
+  }
+  
+  .confirm-btn:hover {
+    background: #a61e6a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(214, 51, 132, 0.4);
+  }
+  
+  /* Responsive para pantallas más pequeñas */
+  @media (max-width: 500px) {
+    .title {
+      font-size: 1.8rem;
+    }
+    
+    .container {
+      padding: 20px;
+    }
+    
+    .confirm-btn {
+      font-size: 0.9rem;
+    }
+  }
+  
